@@ -1,5 +1,6 @@
 //Extra Credit
 //Program that uses math on the letter to convert it to lowercase, and then remove all the extraneous uppercase letters in switch
+
 #include <stdio.h>
 
 int main(int argc, char *argv[])
