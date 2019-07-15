@@ -9,13 +9,11 @@ int main(int argc, char* argv[])
         printf("Address of Pointer to char is %p\n", argv[i]);
     }
     printf("\n-------------\n");
-    int a;
-    int *p;
-    a = 10;
-    //address of a
-    printf("Address of p: %p\n", &p);
+    int a=10;
+    int* p =&a;  //address of a
+    //printf("Address of p: %p\n", p);
     printf("Value of a :%d\n", *p); // *p - value at address pointed by p
-    printf("Address of a: %p\n", &a);
+    printf("Address of a: %p\n", &p);
     *p = 12; //dereferencing
     printf("Dereferencing Value of a: %d\n", a);
 
