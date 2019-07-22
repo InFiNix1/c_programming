@@ -16,6 +16,12 @@ int main(int argc, char* argv[])
     printf("Address of a: %p\n", &p);
     *p = 12; //dereferencing
     printf("Dereferencing Value of a: %d\n", a);
+    printf("\n----------------------------------\n\n");
+    char *name[] = {"Sauronil", "Das"};
+    
+
+    printf("Value is %s ", name[0]);
+    printf("\nValue is %s: ", name[1]);
 
     return 0;
 }
