@@ -1,4 +1,4 @@
-CFLAGS=-Wall -g
+CFLAGS=-Wall -g 
 all:
 clean:
-	rm -f 
+		rm -f 
