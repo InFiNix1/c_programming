@@ -4,7 +4,7 @@ int main()
 {
     char str[30];
     int i, j;
-    int temp;
+    char temp;
     printf("\nEnter String: ");
     gets(str);
     printf("\nString is : %s", str);
