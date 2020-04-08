@@ -1,0 +1,86 @@
+1. Creating Stack
+2. Push Element into Stack - void push(int ele)
+3. Pop Element from Stack - int pop(void)
+4. Check Stack is Full or not - int isFull(void)
+5. Check Stack is Empty or not - int isEmpty(void)
+6. Traverse Stack of Display Stack Elements - void Traverse()
+7. Length of Stack - 
+8. top variable - int top=-1 why? Because, array starts from 0 which itself is an element.
+
+
+Creating Stack
+--------------
+
+#define CAPACITY 5 --- it can be the maximum value of stack size
+
+int top = -1;
+
+int stack[CAPACITY];
+
+void push(int ele)
+-----------------
+
+void push(int ele)
+{
+    if(isFull())
+    {
+        printf("\nStack Is Empty");
+    }
+    else
+    {
+        ++top;
+        stack[top]=ele;
+        printf("\n%d is inserted\n", ele);
+    }
+}
+
+
+int isFull()
+------------
+
+int isFull()
+{
+    if(top==CAPACITY-1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+int pop(void)
+-----------------
+
+int push(void)
+{
+    int ele;
+    if(isEmpty())
+    {
+        return 0;
+    }
+    else
+    {
+        ele=stack[top];
+        --top;
+        printf("\n%d is Deleted\n", ele);
+    }
+    return top;
+}
+
+
+int isEmpty()
+------------
+
+int isEmpty()
+{
+    if(top==-1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
