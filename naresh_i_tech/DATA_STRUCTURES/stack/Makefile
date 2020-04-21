@@ -1,5 +1,5 @@
 CFLAGS=-Wall -g
-all:
+all: static_stack
 
 clean:
-	rm -rfI
+	rm -rfI static_stack
