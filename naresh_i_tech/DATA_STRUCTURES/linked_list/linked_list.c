@@ -121,7 +121,23 @@ void display()
 
 void addatbegin()
 {
+    struct node* temp;
+    temp=(struct node*)malloc(sizeof(struct node*));
 
+    printf("\nEnter Node Data: ");
+    scanf("%d", &temp->data);
+
+    temp->link=NULL;
+
+    if(root==NULL)
+    {
+        root=temp;
+    }
+    else
+    {
+        temp->link=root;
+        root=temp;
+    }
 }
 void delete()
 {
