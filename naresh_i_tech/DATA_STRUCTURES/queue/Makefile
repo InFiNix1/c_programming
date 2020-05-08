@@ -1,5 +1,5 @@
 CFLAGS=-Wall -g
-all:
+all: dynamic_queue
 
 clean:
-	rm -rfI
+	rm -rfI dynamic_queue

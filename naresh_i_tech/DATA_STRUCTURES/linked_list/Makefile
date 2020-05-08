@@ -1,5 +1,5 @@
 CFLAGS=-Wall -g
-all: linklist
+all: double_link_list
 
 clean:
-	rm -rfI linklist
+	rm -rfI double_link_list
